@@ -11,12 +11,12 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class QuizAnswer {
 
   private long id;
-  private List<Answer> answerList;
+  private List<Answer> answers;
 
   public QuizAnswer(List<Answer> answerList) {
-    AtomicInteger count = new AtomicInteger(1);
+    AtomicInteger count = new AtomicInteger(0);
     this.id = count.incrementAndGet();
-    this.answerList = answerList;
+    this.answers = answerList;
   }
 
   public QuizAnswer() {
@@ -26,7 +26,7 @@ public class QuizAnswer {
   public String toString() {
     return "QuizAnswer{" +
             "id=" + id +
-            ", answerList=" + answerList +
+            ", answers=" + answers +
             '}';
   }
 }

@@ -5,19 +5,16 @@ import lombok.Setter;
 
 import javax.persistence.*;
 
-@Entity
-@Table(name = "ANSWER")
+
 @Getter
 @Setter
 public class Answer {
 
-  @Id
-  @GeneratedValue(strategy = GenerationType.AUTO)
   private long id;
-
   private String answer;
 
-  public Answer(String answer) {
+  public Answer(long id, String answer) {
+    this.id = id;
     this.answer = answer;
   }
 

@@ -3,7 +3,6 @@ package com.greenfox.spring.exam.model;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.*;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -12,12 +11,12 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class QuizQuestion {
 
   private long id;
-  private List<Question> questionList;
+  private List<Question> questions;
 
   public QuizQuestion(List<Question> questionList) {
-    AtomicInteger count = new AtomicInteger(1);
+    AtomicInteger count = new AtomicInteger(0);
     this.id = count.incrementAndGet();
-    this.questionList = questionList;
+    this.questions = questionList;
   }
 
   public QuizQuestion() {
@@ -27,7 +26,7 @@ public class QuizQuestion {
   public String toString() {
     return "QuizQuestion{" +
             "id=" + id +
-            ", questionList=" + questionList +
+            ", questions=" + questions +
             '}';
   }
 }

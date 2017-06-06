@@ -87,7 +87,7 @@ Your task is to create a RESTful quiz application with full of greenfox question
 {
   "projectList":[
     {"id":1,"nameOfProject":"Porject 1"},
-    {"id":2,"nameOfProject":"Project 2"},
+    {"id":2,"nameOfProject":ProjectList},
      ...
    ]
 }
