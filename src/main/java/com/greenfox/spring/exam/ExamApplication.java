@@ -2,7 +2,6 @@ package com.greenfox.spring.exam;
 
 import com.greenfox.spring.exam.model.Answer;
 import com.greenfox.spring.exam.model.Question;
-import com.greenfox.spring.exam.model.Quiz;
 import com.greenfox.spring.exam.repository.AnswerRepository;
 import com.greenfox.spring.exam.repository.QuestionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,7 +33,7 @@ public class ExamApplication implements CommandLineRunner{
 		answerRepository.save(new Answer("4"));
 		questionRepository.save(new Question("How many mentors teach at Green Fox at this moment?"));
 		answerRepository.save(new Answer("16"));
-		questionRepository.save(new Question("What was the name of the first Green Fox class?"));
-		answerRepository.save(new Answer("Vulpes"));
+//		questionRepository.save(new Question("What was the name of the first Green Fox class?"));
+//		answerRepository.save(new Answer("Vulpes"));
 	}
 }
